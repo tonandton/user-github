@@ -25,26 +25,28 @@ const Repos = () => {
         })
         .slice(0, 5);
 
-    // const chartData = [
-    //     {
-    //         label: "HTML",
-    //         value: "13",
-    //     },
-    //     {
-    //         label: "CSS",
-    //         value: "23",
-    //     },
-    //     {
-    //         label: "Javascript",
-    //         value: "80",
-    //     },
-    // ];
+    const chartData = [
+        {
+            label: "HTML",
+            value: "13",
+        },
+        {
+            label: "CSS",
+            value: "23",
+        },
+        {
+            label: "Javascript",
+            value: "80",
+        },
+    ];
 
     return (
         <section className="section">
             <Wrapper className="section-center">
                 <Pie3D data={languages} />
-                {/* <ExampleChart data={chartData} /> */}
+                <div></div>
+                <ExampleChart data={chartData} />
+                <div></div>
             </Wrapper>
         </section>
     );
